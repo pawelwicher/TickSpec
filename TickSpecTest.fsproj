@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Addition.feature" />
+    <Compile Include="XunitWiring.fs" />
+    <Compile Include="XunitFeature.fs" />
+    <Compile Include="Calculator.fs" />
+    <Compile Include="AdditionSteps.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="fsunit.xunit" Version="3.8.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="TickSpec" Version="2.0.0-rc1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+  </ItemGroup>
+</Project>
